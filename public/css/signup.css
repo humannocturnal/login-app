@@ -1,0 +1,103 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('/images/photo-1488342994276-7c3bc0742042.jpg') no-repeat center center/cover; /* Background foto */
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Agar konten dan footer tersusun vertikal */
+    justify-content: space-between; /* Mengatur jarak antara konten dan footer */
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1; /* Membuat konten fleksibel dan mendorong footer ke bawah */
+}
+
+.form-wrapper {
+    background: rgba(255, 255, 255, 0.9); /* Background putih dengan transparansi */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 100px; /* Ukuran logo */
+    height: auto; /* Menjaga proporsi */
+    margin-bottom: 20px;
+    border-radius: 50%; /* Membuat logo menjadi lingkaran */
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Jarak antar input */
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+p {
+    margin-top: 20px;
+    color: #333;
+}
+
+p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8); /* Warna abu-abu gelap */
+    color: white; /* Warna teks */
+    padding: 10px;
+    font-size: 14px;
+    width: 100%; /* Lebar penuh */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}

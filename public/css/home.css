@@ -1,0 +1,100 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: #f5f5f5;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Tinggi elemen menjadi 100% dari layar */
+    background: url('/images/photo-1488342994276-7c3bc0742042.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 0 20px;
+    background-size: cover; /* Gambar memenuhi seluruh area */
+    background-attachment: fixed; /* Membuat efek paralaks */
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #fff; /* Warna teks agar kontras dengan background */
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Memberikan efek bayangan */
+}
+
+.hero p {
+    font-size: 20px;
+    color: #fff; /* Warna teks agar kontras */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Memberikan efek bayangan */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8); /* Warna abu-abu gelap */
+    color: white; /* Warna teks */
+    padding: 15px;
+    font-size: 14px;
+    position: fixed; /* Tetap di bagian bawah layar */
+    bottom: 0;
+    width: 100%; /* Lebar penuh */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px; /* Menyesuaikan ukuran font untuk layar kecil */
+    }
+
+    .hero p {
+        font-size: 16px; /* Menyesuaikan ukuran font untuk layar kecil */
+    }
+}
